@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
     top: 15,
     left: 3.97,
     gap: 0,
-    paddingLeft: 60,
+    paddingLeft: 25,
     
   },
   searchInput: {
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
     height: 50,
     borderRadius: 10,
     padding: 10,
-    marginLeft: -50,
+    marginLeft: -90,
   },
   filterIconContainer: {
     backgroundColor: '#F0522F',
