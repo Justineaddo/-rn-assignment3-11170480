@@ -14,6 +14,11 @@ import {
 const categoriesData = [
   { id: '1', name: 'Exercise', description: '12 tasks', image: require('./assets/woman1.png') },
   { id: '2', name: 'Study', description: '12 tasks', image: require('./assets/woman.png') },
+  { id: '3', name: 'Code', description: '12 tasks', image: require('./assets/code.png') },
+  { id: '4', name: 'Coke', description: '12 tasks', image: require('./assets/coke.png') },
+  { id: '6', name: 'Food', description: '12 tasks', image: require('./assets/food.png') },
+  { id: '7', name: 'Read', description: '12 tasks', image: require('./assets/Read.png') },
+  { id: '8', name: 'Movies', description: '12 tasks', image: require('./assets/movies.png') },
 ];
 
 const taskData = [
@@ -154,8 +159,8 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   categoryImage: {
-    width: 151,
-    height: 140,
+    width: 141,
+    height: 130,
     marginTop: 10,
   },
   ongoingTasksContainer: {
