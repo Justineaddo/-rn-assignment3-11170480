@@ -10,7 +10,7 @@ import {
   ScrollView,
   StyleSheet 
 } from 'react-native';
-
+import Icon from 'react-native-vector-icons/Ionicons';
 const categoriesData = [
   { id: '1', name: 'Exercise', description: '12 tasks', image: require('./assets/woman1.png') },
   { id: '2', name: 'Study', description: '12 tasks', image: require('./assets/woman.png') },
@@ -25,9 +25,18 @@ const taskData = [
   { id: '1', name: 'Mobile App Development' },
   { id: '2', name: 'Web Development' },
   { id: '3', name: 'Data Structures and Algorithms' },
-  { id: '3', name: 'Office Productivity Tools' },
-  { id: '3', name: 'Systems Administration' },
-  { id: '3', name: 'Database Administration' },
+  { id: '4', name: 'Office Productivity Tools' },
+  { id: '5', name: 'Systems Administration' },
+  { id: '6', name: 'Database Administration' },
+  { id: '7', name: 'UX/UI' },
+  { id: '8', name: 'Product Design' },
+  { id: '9', name: 'Cybersecurity' },
+  { id: '10', name: 'Logic Systems' },
+  { id: '11', name: 'Information Sydtems' },
+  { id: '12', name: 'Django' },
+  { id: '13', name: 'Python' },
+  { id: '14', name: 'Javascript' },
+  { id: '15', name: 'Java' },
 ];
 
 const App = () => {
@@ -45,10 +54,11 @@ const App = () => {
         </View>
 
         <View style={styles.searchBar}>
-          <TextInput
-            placeholder="Search"
-            style={styles.searchInput}
-          />
+      <Icon name="search" size={20} color="#000" style={styles.searchIcon} />
+      <TextInput
+        placeholder="Search"
+        style={styles.searchInput}
+      />
           <View style={styles.filterIconContainer}>
             <Image source={require('./assets/Vector.png')} style={styles.filterIcon} />
           </View>
@@ -123,12 +133,23 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
+  searchIcon: {
+    marginLeft: 10,
+    width: 16,
+    height: 16,
+    top: 15,
+    left: 3.97,
+    gap: 0,
+    paddingLeft: 60,
+    
+  },
   searchInput: {
     backgroundColor: 'white',
     width: '80%',
     height: 50,
     borderRadius: 10,
     padding: 10,
+    marginLeft: -50,
   },
   filterIconContainer: {
     backgroundColor: '#F0522F',
