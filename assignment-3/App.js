@@ -22,7 +22,7 @@ const categoriesData = [
 ];
 
 const taskData = [
-  { id: '1', name: 'Mobile App Development' },
+  { id: '1', name: 'Mobile App Development', image: require('./assets/woman1.png')},
   { id: '2', name: 'Web Development' },
   { id: '3', name: 'Data Structures and Algorithms' },
   { id: '4', name: 'Office Productivity Tools' },
